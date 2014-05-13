@@ -105,13 +105,20 @@ public class JavascriptObject {
     }
 
     
+    
+    
+    protected void setProperty(String propertyName, JavascriptEnum propertyValue ) {
+        jsObject.setMember(propertyName, propertyValue.getEnumValue() );
+         properties.put(propertyName, propertyValue);
+    }
+    
     /**
      * Sets a property on this Javascript object.  
      * @param propertyName The property name
      * @param propertyValue The property value.
      */
     protected void setProperty(String propertyName, Object propertyValue) {
-        jsObject.setMember(propertyName, propertyValue);
+        jsObject.setMember(propertyName, propertyValue );
         properties.put(propertyName, propertyValue);
     }
 
@@ -121,8 +128,9 @@ public class JavascriptObject {
      * @param propertyValue The value of the property.
      */
     protected void setProperty(String propertyName, JavascriptObject propertyValue) {
-        jsObject.setMember(propertyName, propertyValue.getVariableName());
-        properties.put(propertyName, propertyValue);
+        //jsObject.setMember(propertyName, propertyValue.getVariableName());
+        jsObject.setMember(propertyName, propertyValue.getJSObject()) ;
+        properties.put(propertyName, propertyValue.getVariableName());
     }
     
 

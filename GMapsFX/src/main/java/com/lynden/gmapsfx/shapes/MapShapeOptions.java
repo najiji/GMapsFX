@@ -23,7 +23,6 @@ import com.lynden.gmapsfx.javascript.JavascriptObjectType;
  * common properties.
  *
  * @author Geoff Capper
- * @param <T>
  */
 public abstract class MapShapeOptions<T extends MapShapeOptions> extends JavascriptObject {
     

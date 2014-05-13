@@ -24,6 +24,7 @@ public enum JavascriptObjectType {
     
    OBJECT("Object"),
    
+   
    INFO_WINDOW("google.maps.InfoWindow"),
    LAT_LNG("google.maps.LatLng"),
    MAP("google.maps.Map"),

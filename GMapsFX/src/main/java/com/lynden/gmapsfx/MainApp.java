@@ -10,6 +10,7 @@ import com.lynden.gmapsfx.javascript.object.LatLongBounds;
 import com.lynden.gmapsfx.javascript.object.MVCArray;
 import com.lynden.gmapsfx.javascript.object.MapOptions;
 import com.lynden.gmapsfx.javascript.object.MapType;
+import com.lynden.gmapsfx.javascript.object.MapTypeEnum;
 import com.lynden.gmapsfx.javascript.object.Marker;
 import com.lynden.gmapsfx.javascript.object.MarkerOptions;
 import com.lynden.gmapsfx.shapes.ArcBuilder;
@@ -100,10 +101,12 @@ public class MainApp extends Application implements MapComponentInitializedListe
                 .scaleControl(false)
                 .streetViewControl(false)
                 .zoomControl(false)
-                .mapType(MapType.ROADMAP);
+                .mapType(MapTypeEnum.ROADMAP);
+        
+     //   if( true ) { return; }
 
         map = mapComponent.createMap(options);
-
+/**
         MarkerOptions markerOptions = new MarkerOptions();
         LatLong markerLatLong = new LatLong(47.606189, -122.335842);
         markerOptions.position(markerLatLong)
@@ -238,7 +241,7 @@ public class MainApp extends Application implements MapComponentInitializedListe
         map.addUIEventHandler(arc, UIEventType.click, (JSObject obj) -> {
             arc.setEditable(!arc.getEditable());
         });
-
+*/
         /*
          LatLong poly1a = new LatLong(47.429945, -122.84363);
          LatLong poly2a = new LatLong(47.361153, -123.03040);
@@ -277,6 +280,7 @@ public class MainApp extends Application implements MapComponentInitializedListe
          System.out.println("pmvca.length after setAt: " + pmvca.getLength());
          System.out.println("pmvca.getArray after setAt: " + pmvca.getArray());
          */
+        
     }
 
     /**

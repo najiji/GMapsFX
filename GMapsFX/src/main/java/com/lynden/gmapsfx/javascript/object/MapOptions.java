@@ -54,9 +54,9 @@ public class MapOptions extends JavascriptObject {
         return this;
     }
     
-    public MapOptions mapType( MapType mapType ) {
+    public MapOptions mapType( MapTypeEnum mapType ) {
         setProperty( "mapTypeId", mapType );
-        this.mapType = mapType;
+       // this.mapType = mapType;
         return this;
     }
     

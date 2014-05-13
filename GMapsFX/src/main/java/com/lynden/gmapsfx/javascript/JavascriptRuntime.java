@@ -171,8 +171,12 @@ public class JavascriptRuntime implements IJavascriptRuntime {
      * @return A String representation of the argument.
      */
     protected String getArgString(Object arg) {
-        if (arg instanceof LatLong) {
-            return ((LatLong) arg).getVariableName();
+//        if (arg instanceof LatLong) {
+//            return ((LatLong) arg).getVariableName();
+        if (arg instanceof JavascriptObject) {
+            return ((JavascriptObject) arg).getVariableName();
+        } else if (arg instanceof JavascriptEnum) {
+            return arg.toString();
         } else if (arg instanceof JavascriptObject) {
             return ((JavascriptObject) arg).getPropertiesAsString();
         } else {

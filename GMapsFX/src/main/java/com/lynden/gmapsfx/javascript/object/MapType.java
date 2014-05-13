@@ -31,12 +31,14 @@ public enum MapType {
     
     protected String typeString;
     
+    
     MapType( String typeString ) {
         this.typeString = typeString;
     }
     
     @Override
     public String toString() {
+      //  return "foo";
         return typeString;
     }
 }
