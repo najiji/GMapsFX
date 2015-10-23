@@ -152,7 +152,7 @@ public class GoogleMapView extends AnchorPane {
     }
 
     private void mapResized() {
-        if (initialized) {
+        if (initialized && map != null) {
             //map.triggerResized();
 //            System.out.println("GoogleMapView.mapResized: triggering resize event");
             webengine.executeScript("google.maps.event.trigger(" + map.getVariableName() + ", 'resize')");

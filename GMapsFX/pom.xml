@@ -6,7 +6,7 @@
     <name>${project.artifactId}</name>
     <description>A Java API for using Google Maps within a JavaFX application.</description>
     <url>http://rterp.github.io/GMapsFX/</url>
-    <version>1.1.2-SNAPSHOT</version>
+    <version>1.1.2-wsl</version>
     <packaging>jar</packaging>
     <licenses>
         <license>
@@ -24,13 +24,19 @@
         </developer>
         <developer>
             <name>Geoff Capper</name>
+        </developer>
+        <developer>
+            <name>Thomas Debrunner</name>
+            <email>thomas.debrunner@wsl.ch</email>
+            <organization>WSL</organization>
+            <organizationUrl>http://www.wsl.ch</organizationUrl>
         </developer>    
     </developers>    
     
     <scm>
-        <connection>scm:git:git@github.com:rterp/GMapsFX.git</connection>
-        <developerConnection>scm:git:git@github.com:rterp/GMapsFX.git</developerConnection>
-        <url>git@github.com:rterp/GMapsFX.git</url>
+        <connection>scm:git:git@github.com:najiji/GMapsFX.git</connection>
+        <developerConnection>scm:git:git@github.com:najiji/GMapsFX.git</developerConnection>
+        <url>git@github.com:najiji/GMapsFX.git</url>
     </scm>    
     
     <properties>

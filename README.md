@@ -1,6 +1,8 @@
 GMapsFX
 =======
 
+**Fork** This fork of GMaps FX tries to fix the NullPointerExceptions in mapResized. 
+
 A pure JavaFX API which allows you to add Google Maps to your JavaFX application without the need to interact with the underlying Google Maps JavaScript API.
 
 GMapsFX requires Java 8
